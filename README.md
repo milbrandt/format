@@ -1,4 +1,4 @@
-﻿## dotnet-format
+﻿# dotnet-format
 
 [![Nuget](https://img.shields.io/nuget/v/dotnet-format.svg)](https://www.nuget.org/packages/dotnet-format)
 
@@ -8,10 +8,9 @@
 |---|:--:|:--:|:--:|:--:|:--:|:--:|
 [master](https://github.com/dotnet/format/tree/master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Windows&configuration=debug&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Windows&configuration=release&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Linux&configuration=debug&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Linux&configuration=release&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Windows_Spanish&configuration=debug&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Windows_Spanish&configuration=release&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|
 
-
 `dotnet-format` is a code formatter for `dotnet` that applies style preferences to a project or solution. Preferences will be read from an `.editorconfig` file, if present, otherwise a default set of preferences will be used. At this time `dotnet-format` is able to format C# and Visual Basic projects with a subset of [supported .editorconfig options](https://github.com/dotnet/format/wiki/Supported-.editorconfig-options).
 
-### How To Install
+## How To Install
 
 The `dotnet-format` nuget package is [published to nuget.org](https://www.nuget.org/packages/dotnet-format/).
 
@@ -21,7 +20,7 @@ You can install the tool using the following command.
 dotnet tool install -g dotnet-format
 ```
 
-#### Installing Development Builds
+### Installing Development Builds
 
 Development builds of `dotnet-format` are being hosted on myget. You can visit the [dotnet-format myget page](https://dotnet.myget.org/feed/format/package/nuget/dotnet-format) to get the latest version number.
 
@@ -31,23 +30,24 @@ You can install the tool using the following command.
 dotnet tool install -g dotnet-format --version 3.0.5-prerelease.19203.5 --add-source https://dotnet.myget.org/F/format/api/v3/index.json
 ```
 
-### How To Use
+## How To Use
 
 By default `dotnet-format` will look in the current directory for a project or solution file and use that as the workspace to format. If more than one project or solution file is present in the current directory you will need to specify the workspace to format using the `-w` option. You can control how verbose the output will be by using the `-v` option.
 
-```
+```console
 Usage:
   dotnet-format [options]
 
 Options:
   -h, /h, --help, -?, /?    Prints out a short help for the command.
-  -w, --workspace           The solution or project file to operate on. If a file is not specified, the command will search
-                            the current directory for one.
-  -v, --verbosity           Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and
-                            diag[nostic]
+  -w, --workspace           The solution or project file to operate on. If a file is not specified, the command
+                            will search the current directory for one.
+  -v, --verbosity           Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed],
+                            and diag[nostic]
   --dry-run                 Format files, but do not save changes to disk.
   --check                   Terminates with a non-zero exit code if any files were formatted.
-  --files                   A comma separated list of relative file paths to format. All files are formatted if empty.
+  --files                   A comma separated list of relative file paths to format. All files are formatted if
+                            empty.
   --version                 Display version information
 ```
 
@@ -61,7 +61,7 @@ Add `format` after `dotnet` and before the command arguments that you want to ru
 | dotnet **format** --files Programs.cs,Utility\Logging.cs | Formats the files Program.cs and Utility\Logging.cs                                           |
 | dotnet **format** --check --dry-run                      | Formats but does not save. Returns a non-zero exit code if any files would have been changed. |
 
-### How To Uninstall
+## How To Uninstall
 
 You can uninstall the tool using the following command.
 
@@ -69,7 +69,7 @@ You can uninstall the tool using the following command.
 dotnet tool uninstall -g dotnet-format
 ```
 
-### How To Build From Source
+## How To Build From Source
 
 You can build and package the tool using the following commands. The instructions assume that you are in the root of the repository.
 
