@@ -4,7 +4,7 @@
 
 [![MyGet](https://img.shields.io/dotnet.myget/format/vpre/dotnet-format.svg?label=myget)](https://dotnet.myget.org/feed/format/package/nuget/dotnet-format)
 
-|Branch| Windows (Debug)| Windows (Release)| Linux (Debug) | Linux (Release) | Localization (Debug) | Localization (Release) | 
+|Branch| Windows (Debug)| Windows (Release)| Linux (Debug) | Linux (Release) | Localization (Debug) | Localization (Release) |
 |---|:--:|:--:|:--:|:--:|:--:|:--:|
 [master](https://github.com/dotnet/format/tree/master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Windows&configuration=debug&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Windows&configuration=release&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Linux&configuration=debug&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Linux&configuration=release&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Windows_Spanish&configuration=debug&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|[![Build Status](https://dev.azure.com/dnceng/public/_apis/build/status/dotnet/format/dotnet.format?branchName=master&jobName=Windows_Spanish&configuration=release&label=build)](https://dev.azure.com/dnceng/public/_build/latest?definitionId=347&branchName=master)|
 
@@ -40,14 +40,15 @@ Usage:
   dotnet-format [options]
 
 Options:
-  -w, --workspace    The solution or project file to operate on. If a file is not specified, the command will search
-                     the current directory for one.
-  -v, --verbosity    Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and
-                     diag[nostic]
-  --dry-run          Format files, but do not save changes to disk.
-  --check            Terminates with a non-zero exit code if any files were formatted.
-  --files            A comma separated list of relative file paths to format. All files are formatted if empty.
-  --version          Display version information
+  -h, /h, --help, -?, /?    Prints out a short help for the command.
+  -w, --workspace           The solution or project file to operate on. If a file is not specified, the command will search
+                            the current directory for one.
+  -v, --verbosity           Set the verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and
+                            diag[nostic]
+  --dry-run                 Format files, but do not save changes to disk.
+  --check                   Terminates with a non-zero exit code if any files were formatted.
+  --files                   A comma separated list of relative file paths to format. All files are formatted if empty.
+  --version                 Display version information
 ```
 
 Add `format` after `dotnet` and before the command arguments that you want to run:
@@ -55,7 +56,7 @@ Add `format` after `dotnet` and before the command arguments that you want to ru
 | Examples                                                 | Description                                                                                   |
 | -------------------------------------------------------- |---------------------------------------------------------------------------------------------- |
 | dotnet **format**                                        | Formats the project or solution in the current directory.                                     |
-| dotnet **format** -w &lt;workspace&gt;                   | Formats a specific project or solution.                                                       | 
+| dotnet **format** -w &lt;workspace&gt;                   | Formats a specific project or solution.                                                       |
 | dotnet **format** -v diag                                | Formats with very verbose logging.                                                            |
 | dotnet **format** --files Programs.cs,Utility\Logging.cs | Formats the files Program.cs and Utility\Logging.cs                                           |
 | dotnet **format** --check --dry-run                      | Formats but does not save. Returns a non-zero exit code if any files would have been changed. |
