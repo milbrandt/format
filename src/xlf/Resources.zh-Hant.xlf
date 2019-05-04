@@ -77,6 +77,11 @@
         <target state="translated">在 '{0}' 中找到多個 MSBuild 解決方案檔。請指定要搭配 --workspace 選項使用的檔案。</target>
         <note />
       </trans-unit>
+      <trans-unit id="Prints_out_a_short_help_for_the_command">
+        <source>Looks up a localized string similar to Prints out a short help for the command.</source>
+        <target state="new">Looks up a localized string similar to Prints out a short help for the command.</target>
+        <note />
+      </trans-unit>
       <trans-unit id="Running_formatters">
         <source>Running formatters.</source>
         <target state="new">Running formatters.</target>

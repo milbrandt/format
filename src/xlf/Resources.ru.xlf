@@ -77,6 +77,11 @@
         <target state="translated">В "{0}" обнаружено несколько файлов решений MSBuild. Укажите используемый файл с параметром --workspace.</target>
         <note />
       </trans-unit>
+      <trans-unit id="Prints_out_a_short_help_for_the_command">
+        <source>Looks up a localized string similar to Prints out a short help for the command.</source>
+        <target state="new">Looks up a localized string similar to Prints out a short help for the command.</target>
+        <note />
+      </trans-unit>
       <trans-unit id="Running_formatters">
         <source>Running formatters.</source>
         <target state="new">Running formatters.</target>

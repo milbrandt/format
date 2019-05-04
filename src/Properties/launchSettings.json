@@ -9,6 +9,11 @@
       "commandName": "Project",
       "commandLineArgs": "-w format.sln -v diag",
       "workingDirectory": "$(SolutionDir)"
+    },
+    "dotnet-format (--help)": {
+      "commandName": "Project",
+      "commandLineArgs": "--help",
+      "workingDirectory": "$(SolutionDir)"
     }
   }
 }

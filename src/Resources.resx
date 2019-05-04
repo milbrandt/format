@@ -192,4 +192,7 @@
   <data name="Warnings_were_encountered_while_loading_the_workspace_Set_the_verbosity_option_to_the_diagnostic_level_to_log_warnings" xml:space="preserve">
     <value>Warnings were encountered while loading the workspace. Set the verbosity option to the 'diagnostic' level to log warnings.</value>
   </data>
+  <data name="Prints_out_a_short_help_for_the_command" xml:space="preserve">
+    <value>Looks up a localized string similar to Prints out a short help for the command.</value>
+  </data>
 </root>
